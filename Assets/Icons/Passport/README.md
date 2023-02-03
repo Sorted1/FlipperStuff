@@ -9,3 +9,5 @@ Stuff I Use On My Flipper!
 <br>
 <h4>Scream</h4>
 <img src="https://media.discordapp.net/attachments/1062164249905995816/1070937455903129710/scream.png" style="width:128px;height:128px;"></img>
+<h4>Jason</h4>
+<img src="https://media.discordapp.net/attachments/1051840187866546176/1070941080066990141/jason.png?width=512&height=512" style="width:128px;height:128px;"></img>
