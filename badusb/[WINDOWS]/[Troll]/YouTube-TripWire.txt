@@ -4,7 +4,7 @@ REM     Description: Plays any YouTube video after a mouse movement is detected.
 REM     Target: Windows 10, 11
 GUI r
 DELAY 500
-STRING powershell -w h Add-Type -AssemblyName *m.W*s.F*s;$w=[Windows.Forms.Cursor];$p=$w::Position.X;while(1){if($w::Position.X-ne$p){break}else{Sleep 3}};saps https://youtu.be/dQw4w9WgXcQ;sleep 3;$o=New-Object -ComObject WScript.Shell;$o.SendKeys('f')
+STRING powershell -w h Add-Type -AssemblyName *m.W*s.F*s;$w=[Windows.Forms.Cursor];$p=$w::Position.X;while(1){if($w::Position.X-ne$p){break}else{Sleep 3}};saps https://youtu.be/0vxCFIGCqnI;sleep 3;$o=New-Object -ComObject WScript.Shell;$o.SendKeys('f11s')
 ENTER
 REM     Remember to replace the link with your DropBox shared link for the intended file to download
 REM     Also remember to replace ?dl=0 with ?dl=1 at the end of your link so it is executed properly
