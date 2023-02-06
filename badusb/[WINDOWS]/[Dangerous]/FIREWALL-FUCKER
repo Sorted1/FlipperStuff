@@ -4,9 +4,14 @@ REM Description: This Blocks All Incoming And Outgoing Traffic On Windows Firewa
 
 
 DELAY 750
-GUI r
+WINDOWS d
+DELAY 850
+WINDOWS r
 DELAY 900
 STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 750
+LEFTARROW
 ENTER
 DELAY 900
 ALT y
