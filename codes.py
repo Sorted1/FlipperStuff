@@ -1,17 +1,7 @@
-# Generates All Possible Phone Passcodes
-import random, math, os
-
-def comb(L):
-      
-    for i in range(10):
-        for j in range(10):
-            for k in range(10):
-                for l in range(10):
-                    
-                    # check if the indexes are not
-                    # same
-                    if (i!=j and j!=k and i!=k):
-                        print(L[i], L[j], L[k], L[l])
-                      
-# Driver Code
-comb([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+with open("passcodes.txt", "w") as file:
+    # Loop through all possible combinations of 4 digits
+    for i in range(10000):
+        # Convert the number to a 4-digit string, padded with leading zeros
+        passcode = "{:04d}".format(i)
+        # Write the passcode to the text file
+        file.write(passcode + "\n")
