@@ -1,6 +1,6 @@
 import os, time
 
-banner = """Type Somthing In Notpad [1] | """
+banner = """Type Somthing In Notpad [1] | Do Powershell Command [2]"""
 
 print(banner)
 choice = input("Enter Choice: ")
@@ -20,3 +20,15 @@ if choice == "1":
     print(f"Generated You Can Find It In This Text File {file}")
     with open(f"{file}", "w") as file:
         file.write(f"GUI r\nDELAY 200\nSTRING notepad\nENTER\nDELAY 1000\nSTRING {text}\nENTER")
+if choice == "2":
+    text = input("Enter Command To Run: ")
+    file = input("File you want to write to: ")
+    print("Generating.")
+    time.sleep(1)
+    print("Generating..")
+    time.sleep(1)
+    print("Generating...")
+    time.sleep(1)
+    print(f"Generated You Can Find It In This Text File {file}")
+    with open(f"{file}", "w") as file:
+        file.write(f"GUI r\nDELAY 200\nSTRING powershell\nENTER\nDELAY 500\nSTRING {text}\nENTER")
