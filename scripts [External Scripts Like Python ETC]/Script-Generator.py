@@ -1,3 +1,6 @@
+#MADE BY SORTED
+#MADE BY SORTED
+#MADE BY SORTED
 import os, time
 
 banner = """Type Somthing In Notpad [1] | Do Powershell Command [2]"""
