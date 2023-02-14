@@ -1,3 +1,8 @@
+#MADE BY SORTED
+#MADE BY SORTED
+#MADE BY SORTED
+#MADE BY SORTED
+
 with open("passcodes.txt", "w") as file:
     # Loop through all possible combinations of 4 digits
     for i in range(10000):
