@@ -31,4 +31,4 @@ if choice == "2":
     time.sleep(1)
     print(f"Generated You Can Find It In This Text File {file}")
     with open(f"{file}", "w") as file:
-        file.write(f"WINDOWS d\nGUI r\nDELAY 200\nSTRING powershell Start-Process powershell -Verb runAs\nENTER\nDELAY 750\nLEFTARROW\nENTER\nDELAY 900\nALT y\nDELAY 900\nSTRING {text}\nENTER")
+        file.write(f"WINDOWS d\nGUI r\nDELAY 700\nSTRING powershell Start-Process powershell -Verb runAs\nDELAY 300\nENTER\nDELAY 900\nLEFTARROW\nDELAY 300\nENTER\nDELAY 900\nALT y\nDELAY 900\nSTRING {text}\nENTER")
